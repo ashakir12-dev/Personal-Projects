@@ -146,8 +146,8 @@ Discarded input sections
  .debug_macro   0x00000000       0xd2 ./utilities/fsl_debug_console.o
  .debug_macro   0x00000000       0x2e ./utilities/fsl_debug_console.o
  .debug_macro   0x00000000       0x2e ./utilities/fsl_debug_console.o
- .debug_line    0x00000000      0x48c ./utilities/fsl_debug_console.o
- .debug_str     0x00000000    0x2a2fb ./utilities/fsl_debug_console.o
+ .debug_line    0x00000000      0x460 ./utilities/fsl_debug_console.o
+ .debug_str     0x00000000    0x2a2f0 ./utilities/fsl_debug_console.o
  .comment       0x00000000       0x7a ./utilities/fsl_debug_console.o
  .debug_frame   0x00000000       0x4c ./utilities/fsl_debug_console.o
  .ARM.attributes
@@ -338,8 +338,8 @@ Discarded input sections
  .debug_macro   0x00000000      0x10a ./drivers/fsl_common.o
  .debug_macro   0x00000000       0x16 ./drivers/fsl_common.o
  .debug_macro   0x00000000       0x77 ./drivers/fsl_common.o
- .debug_line    0x00000000      0x3fd ./drivers/fsl_common.o
- .debug_str     0x00000000    0x28b0a ./drivers/fsl_common.o
+ .debug_line    0x00000000      0x3e7 ./drivers/fsl_common.o
+ .debug_str     0x00000000    0x28aff ./drivers/fsl_common.o
  .comment       0x00000000       0x7a ./drivers/fsl_common.o
  .debug_frame   0x00000000       0x94 ./drivers/fsl_common.o
  .ARM.attributes
@@ -558,8 +558,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x16 ./drivers/fsl_power.o
  .debug_macro   0x00000000       0x77 ./drivers/fsl_power.o
  .debug_macro   0x00000000       0x10 ./drivers/fsl_power.o
- .debug_line    0x00000000      0x5e1 ./drivers/fsl_power.o
- .debug_str     0x00000000    0x29156 ./drivers/fsl_power.o
+ .debug_line    0x00000000      0x5cb ./drivers/fsl_power.o
+ .debug_str     0x00000000    0x2914b ./drivers/fsl_power.o
  .comment       0x00000000       0x7a ./drivers/fsl_power.o
  .debug_frame   0x00000000      0x150 ./drivers/fsl_power.o
  .ARM.attributes
@@ -962,8 +962,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x77 ./component/uart/miniusart_adapter.o
  .debug_macro   0x00000000       0x22 ./component/uart/miniusart_adapter.o
  .debug_macro   0x00000000       0x2e ./component/uart/miniusart_adapter.o
- .debug_line    0x00000000      0x52e ./component/uart/miniusart_adapter.o
- .debug_str     0x00000000    0x29c46 ./component/uart/miniusart_adapter.o
+ .debug_line    0x00000000      0x50d ./component/uart/miniusart_adapter.o
+ .debug_str     0x00000000    0x29c3b ./component/uart/miniusart_adapter.o
  .comment       0x00000000       0x7a ./component/uart/miniusart_adapter.o
  .debug_frame   0x00000000       0xf0 ./component/uart/miniusart_adapter.o
  .ARM.attributes
@@ -1031,8 +1031,8 @@ Discarded input sections
  .debug_macro   0x00000000       0x1c ./board/board.o
  .debug_macro   0x00000000       0xd2 ./board/board.o
  .debug_macro   0x00000000       0x2e ./board/board.o
- .debug_line    0x00000000      0x43f ./board/board.o
- .debug_str     0x00000000    0x2a47a ./board/board.o
+ .debug_line    0x00000000      0x413 ./board/board.o
+ .debug_str     0x00000000    0x2a46f ./board/board.o
  .comment       0x00000000       0x7a ./board/board.o
  .debug_frame   0x00000000       0x2c ./board/board.o
  .ARM.attributes
@@ -1415,7 +1415,7 @@ END GROUP
  *(SORT_BY_ALIGNMENT(.rodata.$Flash2.*))
  *(SORT_BY_ALIGNMENT(.rodata.$BOOT_FLASH.*))
 
-.text           0x00000000     0x1d34
+.text           0x00000000     0x1d28
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(SORT_BY_ALIGNMENT(.isr_vector))
@@ -1425,10 +1425,10 @@ END GROUP
                 0x000000c0                . = ALIGN (0x4)
                 0x000000c0                __section_table_start = .
                 0x000000c0                __data_section_table = .
-                0x000000c0        0x4 LONG 0x1d34 LOADADDR (.data)
+                0x000000c0        0x4 LONG 0x1d28 LOADADDR (.data)
                 0x000000c4        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000c8        0x4 LONG 0xc SIZEOF (.data)
-                0x000000cc        0x4 LONG 0x1d34 LOADADDR (.data_RAM2)
+                0x000000cc        0x4 LONG 0x1d28 LOADADDR (.data_RAM2)
                 0x000000d0        0x4 LONG 0x10000fe0 ADDR (.data_RAM2)
                 0x000000d4        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000d8                __data_section_table_end = .
@@ -1788,48 +1788,47 @@ END GROUP
                 0x00001c2c       0x4e ./drivers/fsl_swm.o
  *fill*         0x00001c7a        0x2 ff
  .rodata.CLOCK_SetCoreSysClkDiv.str1.4
-                0x00001c7c       0x7f ./board/clock_config.o
- *fill*         0x00001cfb        0x1 ff
+                0x00001c7c       0x74 ./board/clock_config.o
  .rodata.__num_Ciob_streams
-                0x00001cfc        0x4 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost_nf.a(__ciob.o)
-                0x00001cfc                __num_Ciob_streams
+                0x00001cf0        0x4 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost_nf.a(__ciob.o)
+                0x00001cf0                __num_Ciob_streams
  .rodata.__assertion_failed.str1.1
-                0x00001d00       0x15 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost_nf.a(_cr_assert.o)
+                0x00001cf4       0x15 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_semihost_nf.a(_cr_assert.o)
  .rodata._Csys_alloc.str1.1
-                0x00001d15       0x18 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
+                0x00001d09       0x18 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(alloc.o)
  .rodata._initio.str1.1
-                0x00001d2d        0x4 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
-                0x00001d34                . = ALIGN (0x4)
- *fill*         0x00001d31        0x3 ff
+                0x00001d21        0x4 c:/nxp/mcuxpressoide_11.2.1_4149/ide/plugins/com.nxp.mcuxpresso.tools.win32_11.2.0.202008311134/tools/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libcr_c.a(initio.o)
+                0x00001d28                . = ALIGN (0x4)
+ *fill*         0x00001d25        0x3 ff
 
-.glue_7         0x00001d34        0x0
- .glue_7        0x00001d34        0x0 linker stubs
+.glue_7         0x00001d28        0x0
+ .glue_7        0x00001d28        0x0 linker stubs
 
-.glue_7t        0x00001d34        0x0
- .glue_7t       0x00001d34        0x0 linker stubs
+.glue_7t        0x00001d28        0x0
+ .glue_7t       0x00001d28        0x0 linker stubs
 
-.vfp11_veneer   0x00001d34        0x0
- .vfp11_veneer  0x00001d34        0x0 linker stubs
+.vfp11_veneer   0x00001d28        0x0
+ .vfp11_veneer  0x00001d28        0x0 linker stubs
 
-.v4_bx          0x00001d34        0x0
- .v4_bx         0x00001d34        0x0 linker stubs
+.v4_bx          0x00001d28        0x0
+ .v4_bx         0x00001d28        0x0 linker stubs
 
-.iplt           0x00001d34        0x0
- .iplt          0x00001d34        0x0 ./startup/startup_lpc804.o
+.iplt           0x00001d28        0x0
+ .iplt          0x00001d28        0x0 ./startup/startup_lpc804.o
 
-.rel.dyn        0x00001d34        0x0
- .rel.iplt      0x00001d34        0x0 ./startup/startup_lpc804.o
+.rel.dyn        0x00001d28        0x0
+ .rel.iplt      0x00001d28        0x0 ./startup/startup_lpc804.o
 
 .ARM.extab
  *(SORT_BY_ALIGNMENT(.ARM.extab*) SORT_BY_ALIGNMENT(.gnu.linkonce.armextab.*))
 
-.ARM.exidx      0x00001d34        0x0
-                0x00001d34                __exidx_start = .
+.ARM.exidx      0x00001d28        0x0
+                0x00001d28                __exidx_start = .
  *(SORT_BY_ALIGNMENT(.ARM.exidx*) SORT_BY_ALIGNMENT(.gnu.linkonce.armexidx.*))
-                0x00001d34                __exidx_end = .
-                0x00001d34                _etext = .
+                0x00001d28                __exidx_end = .
+                0x00001d28                _etext = .
 
-.data_RAM2      0x10000fe0        0x0 load address 0x00001d34
+.data_RAM2      0x10000fe0        0x0 load address 0x00001d28
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2 = .)
                 [!provide]                PROVIDE (__start_data_IAP_SRAM = .)
@@ -1850,7 +1849,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0xc load address 0x00001d34
+.data           0x10000000        0xc load address 0x00001d28
  FILL mask 0xff
                 0x10000000                _data = .
                 [!provide]                PROVIDE (__start_data_RAM = .)
@@ -1876,7 +1875,7 @@ END GROUP
                 [!provide]                PROVIDE (__end_data_RAM = .)
                 [!provide]                PROVIDE (__end_data_SRAM = .)
 
-.igot.plt       0x1000000c        0x0 load address 0x00001d40
+.igot.plt       0x1000000c        0x0 load address 0x00001d34
  .igot.plt      0x1000000c        0x0 ./startup/startup_lpc804.o
 
 .bss_RAM2       0x10000fe0        0x0
@@ -1964,8 +1963,8 @@ END GROUP
                 0x10000fe0                _vStackTop = (. + _StackSize)
                 0xefffea1f                PROVIDE (__valid_user_code_checksum = (0x0 - (((_vStackTop + (ResetISR + 0x1)) + (DEFINED (NMI_Handler)?NMI_Handler:M0_NMI_Handler + 0x1)) + (DEFINED (HardFault_Handler)?HardFault_Handler:M0_HardFault_Handler + 0x1))))
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00001d40                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00001d40                _image_size = (_image_end - _image_start)
+                0x00001d34                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00001d34                _image_size = (_image_end - _image_start)
 OUTPUT(LPC804_Interrupt_LED_Toggle.axf elf32-littlearm)
 
 .debug_info     0x00000000     0x8e84
@@ -2079,51 +2078,51 @@ OUTPUT(LPC804_Interrupt_LED_Toggle.axf elf32-littlearm)
  .debug_macro   0x000012df      0x13b ./board/pin_mux.o
  .debug_macro   0x0000141a       0x46 ./board/pin_mux.o
 
-.debug_line     0x00000000     0x45c9
+.debug_line     0x00000000     0x448a
  .debug_line    0x00000000      0x269 ./startup/startup_lpc804.o
- .debug_line    0x00000269      0x568 ./source/LPC804_Interrupt_LED_Toggle.o
- .debug_line    0x000007d1       0x59 ./source/semihost_hardfault.o
- .debug_line    0x0000082a      0x681 ./drivers/fsl_clock.o
- .debug_line    0x00000eab      0x3b6 ./drivers/fsl_gpio.o
- .debug_line    0x00001261      0xab9 ./drivers/fsl_pint.o
- .debug_line    0x00001d1a      0x39f ./drivers/fsl_reset.o
- .debug_line    0x000020b9      0x428 ./drivers/fsl_swm.o
- .debug_line    0x000024e1      0x36f ./drivers/fsl_syscon.o
- .debug_line    0x00002850      0xc75 ./drivers/fsl_usart.o
- .debug_line    0x000034c5      0x2da ./device/system_LPC804.o
- .debug_line    0x0000379f      0x49e ./board/clock_config.o
- .debug_line    0x00003c3d      0x3f2 ./board/peripherals.o
- .debug_line    0x0000402f      0x59a ./board/pin_mux.o
+ .debug_line    0x00000269      0x531 ./source/LPC804_Interrupt_LED_Toggle.o
+ .debug_line    0x0000079a       0x59 ./source/semihost_hardfault.o
+ .debug_line    0x000007f3      0x66b ./drivers/fsl_clock.o
+ .debug_line    0x00000e5e      0x3a0 ./drivers/fsl_gpio.o
+ .debug_line    0x000011fe      0xaa3 ./drivers/fsl_pint.o
+ .debug_line    0x00001ca1      0x389 ./drivers/fsl_reset.o
+ .debug_line    0x0000202a      0x412 ./drivers/fsl_swm.o
+ .debug_line    0x0000243c      0x359 ./drivers/fsl_syscon.o
+ .debug_line    0x00002795      0xc5f ./drivers/fsl_usart.o
+ .debug_line    0x000033f4      0x2cf ./device/system_LPC804.o
+ .debug_line    0x000036c3      0x47d ./board/clock_config.o
+ .debug_line    0x00003b40      0x3d1 ./board/peripherals.o
+ .debug_line    0x00003f11      0x579 ./board/pin_mux.o
 
-.debug_str      0x00000000    0x2f3bb
- .debug_str     0x00000000     0x32d8 ./startup/startup_lpc804.o
-                               0x331b (size before relaxing)
- .debug_str     0x000032d8    0x28941 ./source/LPC804_Interrupt_LED_Toggle.o
-                              0x2b845 (size before relaxing)
- .debug_str     0x0002bc19       0x1f ./source/semihost_hardfault.o
-                               0x2e1b (size before relaxing)
- .debug_str     0x0002bc38      0x5db ./drivers/fsl_clock.o
-                              0x299ec (size before relaxing)
- .debug_str     0x0002c213      0x3b5 ./drivers/fsl_gpio.o
-                              0x298c4 (size before relaxing)
- .debug_str     0x0002c5c8      0x98f ./drivers/fsl_pint.o
-                              0x2a5ce (size before relaxing)
- .debug_str     0x0002cf57       0xae ./drivers/fsl_reset.o
-                              0x28e8b (size before relaxing)
- .debug_str     0x0002d005      0xdbc ./drivers/fsl_swm.o
-                              0x2988e (size before relaxing)
- .debug_str     0x0002ddc1       0x51 ./drivers/fsl_syscon.o
-                              0x290ce (size before relaxing)
- .debug_str     0x0002de12      0xcdf ./drivers/fsl_usart.o
-                              0x2a7b5 (size before relaxing)
- .debug_str     0x0002eaf1       0x6f ./device/system_LPC804.o
-                              0x279ff (size before relaxing)
- .debug_str     0x0002eb60      0x49e ./board/clock_config.o
-                              0x29224 (size before relaxing)
- .debug_str     0x0002effe       0x51 ./board/peripherals.o
-                              0x28ef7 (size before relaxing)
- .debug_str     0x0002f04f      0x36c ./board/pin_mux.o
-                              0x2a2dc (size before relaxing)
+.debug_str      0x00000000    0x2f3b0
+ .debug_str     0x00000000     0x32cd ./startup/startup_lpc804.o
+                               0x3310 (size before relaxing)
+ .debug_str     0x000032cd    0x28941 ./source/LPC804_Interrupt_LED_Toggle.o
+                              0x2b83a (size before relaxing)
+ .debug_str     0x0002bc0e       0x1f ./source/semihost_hardfault.o
+                               0x2e10 (size before relaxing)
+ .debug_str     0x0002bc2d      0x5db ./drivers/fsl_clock.o
+                              0x299e1 (size before relaxing)
+ .debug_str     0x0002c208      0x3b5 ./drivers/fsl_gpio.o
+                              0x298b9 (size before relaxing)
+ .debug_str     0x0002c5bd      0x98f ./drivers/fsl_pint.o
+                              0x2a5c3 (size before relaxing)
+ .debug_str     0x0002cf4c       0xae ./drivers/fsl_reset.o
+                              0x28e80 (size before relaxing)
+ .debug_str     0x0002cffa      0xdbc ./drivers/fsl_swm.o
+                              0x29883 (size before relaxing)
+ .debug_str     0x0002ddb6       0x51 ./drivers/fsl_syscon.o
+                              0x290c3 (size before relaxing)
+ .debug_str     0x0002de07      0xcdf ./drivers/fsl_usart.o
+                              0x2a7aa (size before relaxing)
+ .debug_str     0x0002eae6       0x6f ./device/system_LPC804.o
+                              0x279f4 (size before relaxing)
+ .debug_str     0x0002eb55      0x49e ./board/clock_config.o
+                              0x29219 (size before relaxing)
+ .debug_str     0x0002eff3       0x51 ./board/peripherals.o
+                              0x28eec (size before relaxing)
+ .debug_str     0x0002f044      0x36c ./board/pin_mux.o
+                              0x2a2d1 (size before relaxing)
 
 .comment        0x00000000       0x79
  .comment       0x00000000       0x79 ./startup/startup_lpc804.o

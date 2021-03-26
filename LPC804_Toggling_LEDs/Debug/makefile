@@ -29,25 +29,25 @@ endif
 # Add inputs and outputs from these tool invocations to the build variables 
 
 # All Target
-all: LPC804_Project_Practice.axf
+all: LPC804_Toggling_LEDs.axf
 
 # Tool invocations
-LPC804_Project_Practice.axf: $(OBJS) $(USER_OBJS)
+LPC804_Toggling_LEDs.axf: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: MCU Linker'
-	arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC804_Project_Practice.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T LPC804_Project_Practice_Debug.ld -o "LPC804_Project_Practice.axf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-none-eabi-gcc -nostdlib -Xlinker -Map="LPC804_Toggling_LEDs.map" -Xlinker --gc-sections -Xlinker -print-memory-usage -Xlinker --sort-section=alignment -Xlinker --cref -mcpu=cortex-m0plus -mthumb -T "LPC804_Toggling_LEDs_Debug.ld" -o "LPC804_Toggling_LEDs.axf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
 
 # Other Targets
 clean:
-	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) LPC804_Project_Practice.axf
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) LPC804_Toggling_LEDs.axf
 	-@echo ' '
 
 post-build:
 	-@echo 'Performing post-build steps'
-	-arm-none-eabi-size "LPC804_Project_Practice.axf"; # arm-none-eabi-objcopy -v -O binary "LPC804_Project_Practice.axf" "LPC804_Project_Practice.bin" ; # checksum -p LPC804 -d "LPC804_Project_Practice.bin";
+	-arm-none-eabi-size "LPC804_Toggling_LEDs.axf"; # arm-none-eabi-objcopy -v -O binary "LPC804_Toggling_LEDs.axf" "LPC804_Toggling_LEDs.bin" ; # checksum -p LPC804 -d "LPC804_Toggling_LEDs.bin";
 	-@echo ' '
 
 .PHONY: all clean dependents post-build

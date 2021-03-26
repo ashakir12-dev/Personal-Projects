@@ -6,7 +6,7 @@
  * Generated linker script file for LPC804
  * Created from linkscript.ldt by FMCreateLinkLibraries
  * Using Freemarker v2.3.23
- * MCUXpresso IDE v11.2.1 [Build 4149] [2020-10-07] on Mar 18, 2021 9:41:12 PM
+ * MCUXpresso IDE v11.2.1 [Build 4149] [2020-10-07] on Mar 26, 2021 12:47:05 AM
  */
 
 INCLUDE "LPC804_Interrupt_LED_Toggle_Debug_library.ld"

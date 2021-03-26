@@ -73,7 +73,7 @@ int main(void) {
     while(1)
     {
     	 status = GPIO_PinRead(GPIO,P0,SW2);
-    	if(!SW2_STATUS)
+    	if(!status)
     	{
     		GPIO_PinWrite(GPIO,P0,RED_LED,ON);
     		GPIO_PinWrite(GPIO,P0,BLUE_LED,ON);
