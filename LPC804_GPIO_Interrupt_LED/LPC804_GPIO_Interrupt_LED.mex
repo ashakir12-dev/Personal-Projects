@@ -43,7 +43,7 @@
                <pin_label pin_num="14" pin_signal="PIO0_15/ADC_8" label="CN7[11]/CN3[8]/PIO0_15"/>
                <pin_label pin_num="15" pin_signal="PIO0_1/ADC_0/ACMP_I2/CLKIN" label="CN7[10]/CN3[5]/CN5[6]/U4[6]/PIO0_1"/>
                <pin_label pin_num="16" pin_signal="PIO0_9/ADC_4" label="CN7[9]/CN3[6]/R13/U4[2]/PIO0_9/ISP_U0_TXD_DS" identifier="GPIO_9"/>
-               <pin_label pin_num="17" pin_signal="PIO0_8/ADC_5" label="CN7[8]/CN3[7]/R20/U4[5]/PIO0_8/ISP_U0_RXD_DS"/>
+               <pin_label pin_num="17" pin_signal="PIO0_8/ADC_5" label="CN7[8]/CN3[7]/R20/U4[5]/PIO0_8/ISP_U0_RXD_DS" identifier="GPIO_8"/>
                <pin_label pin_num="18" pin_signal="VDD" label="CN7[7]/JP5/R37/VDD"/>
                <pin_label pin_num="19" pin_signal="VSS" label="GND"/>
                <pin_label pin_num="21" pin_signal="VREFP" label="CN7[4]/JP7/MCU_VREFP"/>
@@ -96,6 +96,12 @@
                   <pin peripheral="GPIO" signal="PIO0, 11" pin_num="10" pin_signal="PIO0_11/ADC_6/WKTCLKIN">
                      <pin_features>
                         <pin_feature name="direction" value="OUTPUT"/>
+                     </pin_features>
+                  </pin>
+                  <pin peripheral="GPIO" signal="PIO0, 8" pin_num="17" pin_signal="PIO0_8/ADC_5">
+                     <pin_features>
+                        <pin_feature name="direction" value="INPUT"/>
+                        <pin_feature name="mode" value="pullDown"/>
                      </pin_features>
                   </pin>
                </pins>

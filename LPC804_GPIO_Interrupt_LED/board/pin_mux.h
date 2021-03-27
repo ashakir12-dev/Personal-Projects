@@ -37,6 +37,13 @@ void BOARD_InitBootPins(void);
  * : Pull-down.
  * Pull-down resistor enabled.
  */
+#define PIO0_8_MODE_PULL_DOWN 0x01u
+/*!
+ * @brief
+ * Selects function mode (on-chip pull-up/pull-down resistor control).
+ * : Pull-down.
+ * Pull-down resistor enabled.
+ */
 #define PIO0_9_MODE_PULL_DOWN 0x01u
 
 /*! @name PIO0_9 (number 16), CN7[9]/CN3[6]/R13/U4[2]/PIO0_9/ISP_U0_TXD_DS
@@ -82,6 +89,17 @@ void BOARD_InitBootPins(void);
 #define BOARD_INITPINS_LED_BLUE_PIN 11U                   /*!<@brief PORT pin number */
 #define BOARD_INITPINS_LED_BLUE_PIN_MASK (1U << 11U)      /*!<@brief PORT pin mask */
                                                           /* @} */
+
+/*! @name PIO0_8 (number 17), CN7[8]/CN3[7]/R20/U4[5]/PIO0_8/ISP_U0_RXD_DS
+  @{ */
+
+/* Symbols to be used with GPIO driver */
+#define BOARD_INITPINS_GPIO_8_GPIO GPIO                /*!<@brief GPIO peripheral base pointer */
+#define BOARD_INITPINS_GPIO_8_GPIO_PIN_MASK (1U << 8U) /*!<@brief GPIO pin mask */
+#define BOARD_INITPINS_GPIO_8_PORT 0U                  /*!<@brief PORT device index: 0 */
+#define BOARD_INITPINS_GPIO_8_PIN 8U                   /*!<@brief PORT pin number */
+#define BOARD_INITPINS_GPIO_8_PIN_MASK (1U << 8U)      /*!<@brief PORT pin mask */
+                                                       /* @} */
 
 /*!
  * @brief Configures pin routing and optionally pin electrical features.

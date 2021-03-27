@@ -33,7 +33,7 @@ pin_labels:
 - {pin_num: '14', pin_signal: PIO0_15/ADC_8, label: 'CN7[11]/CN3[8]/PIO0_15'}
 - {pin_num: '15', pin_signal: PIO0_1/ADC_0/ACMP_I2/CLKIN, label: 'CN7[10]/CN3[5]/CN5[6]/U4[6]/PIO0_1'}
 - {pin_num: '16', pin_signal: PIO0_9/ADC_4, label: 'CN7[9]/CN3[6]/R13/U4[2]/PIO0_9/ISP_U0_TXD_DS', identifier: GPIO_9}
-- {pin_num: '17', pin_signal: PIO0_8/ADC_5, label: 'CN7[8]/CN3[7]/R20/U4[5]/PIO0_8/ISP_U0_RXD_DS'}
+- {pin_num: '17', pin_signal: PIO0_8/ADC_5, label: 'CN7[8]/CN3[7]/R20/U4[5]/PIO0_8/ISP_U0_RXD_DS', identifier: GPIO_8}
 - {pin_num: '18', pin_signal: VDD, label: 'CN7[7]/JP5/R37/VDD'}
 - {pin_num: '19', pin_signal: VSS, label: GND}
 - {pin_num: '21', pin_signal: VREFP, label: 'CN7[4]/JP7/MCU_VREFP'}
@@ -70,6 +70,7 @@ BOARD_InitPins:
   - {pin_num: '4', peripheral: GPIO, signal: 'PIO0, 13', pin_signal: PIO0_13/ADC_10, identifier: LED_RED, direction: OUTPUT, gpio_init_state: no_init, mode: pullUp}
   - {pin_num: '5', peripheral: GPIO, signal: 'PIO0, 12', pin_signal: PIO0_12, identifier: LED_GREEN, direction: OUTPUT, gpio_init_state: no_init, mode: pullUp}
   - {pin_num: '10', peripheral: GPIO, signal: 'PIO0, 11', pin_signal: PIO0_11/ADC_6/WKTCLKIN, direction: OUTPUT}
+  - {pin_num: '17', peripheral: GPIO, signal: 'PIO0, 8', pin_signal: PIO0_8/ADC_5, direction: INPUT, mode: pullDown}
  * BE CAREFUL MODIFYING THIS COMMENT - IT IS YAML SETTINGS FOR TOOLS ***********
  */
 /* clang-format on */
@@ -87,6 +88,13 @@ void BOARD_InitPins(void)
     CLOCK_EnableClock(kCLOCK_Iocon);
     /* Enables the clock for the GPIO0 module */
     CLOCK_EnableClock(kCLOCK_Gpio0);
+
+    gpio_pin_config_t GPIO_8_config = {
+        .pinDirection = kGPIO_DigitalInput,
+        .outputLogic = 0U,
+    };
+    /* Initialize GPIO functionality on pin PIO0_8 (pin 17)  */
+    GPIO_PinInit(BOARD_INITPINS_GPIO_8_GPIO, BOARD_INITPINS_GPIO_8_PORT, BOARD_INITPINS_GPIO_8_PIN, &GPIO_8_config);
 
     gpio_pin_config_t GPIO_9_config = {
         .pinDirection = kGPIO_DigitalInput,
@@ -131,6 +139,14 @@ void BOARD_InitPins(void)
                      /* Selects function mode (on-chip pull-up/pull-down resistor control).: Pull-up. Pull-up resistor
                       * enabled. */
                      | IOCON_PIO_MODE(PIO0_13_MODE_PULL_UP));
+
+    IOCON->PIO[14] = ((IOCON->PIO[14] &
+                       /* Mask bits to zero which are setting */
+                       (~(IOCON_PIO_MODE_MASK)))
+
+                      /* Selects function mode (on-chip pull-up/pull-down resistor control).: Pull-down. Pull-down
+                       * resistor enabled. */
+                      | IOCON_PIO_MODE(PIO0_8_MODE_PULL_DOWN));
 
     IOCON->PIO[13] = ((IOCON->PIO[13] &
                        /* Mask bits to zero which are setting */

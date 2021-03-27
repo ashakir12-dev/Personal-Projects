@@ -45,17 +45,18 @@
 
 
 // Define MACROS
-#define RED_LED			13U
-#define GREEN_LED		12U
-#define BLUE_LED		11U
-#define OUTPUT			1U
-#define INPUT 			0U
-#define ON				0U
-#define OFF				1U
-#define SWITCH			9U
+#define RED_LED					13U
+#define GREEN_LED				12U
+#define BLUE_LED				11U
+#define OUTPUT					1U
+#define INPUT 					0U
+#define ON						0U
+#define OFF						1U
+#define SWITCH					9U
 #define _PINT_PIN_INT0_SRC 		kSYSCON_GpioPort0Pin9ToPintsel
-#define TRUE			1U
-#define FALSE			0U
+#define _PINT_PIN_INT1_SRC		kSYSCON_GpioPort0Pin8ToPintsel
+#define TRUE					1U
+#define FALSE					0U
 
 // Define GPIO Configurations
 gpio_pin_config_t OUTPUT_CONFIG = { OUTPUT, OFF};
@@ -64,16 +65,17 @@ gpio_pin_config_t INPUT_CONFIG = { INPUT };
 // Define variables
 bool toggle_led = FALSE;
 
-
+// Callback function for GPIO9 interrupt.
 void pint_pin9_callback_RISE (pint_pin_int_t pintr, uint32_t pmatch_status)
 {
 	toggle_led = TRUE;
 	PINT_PinInterruptClrStatus(PINT, pintr);
 }
 
-void pint_pin9_callback_FALL(pint_pin_int_t pintr, uint32_t pmatch_status)
+// Callback function for GPIO8 intterupt
+void pint_pin8_callback_RISE(pint_pin_int_t pintr, uint32_t pmatch_status)
 {
-	toggle_led = FALSE;
+	ftoggle_led = FALSE;
 	PINT_PinInterruptClrStatus(PINT, pintr);
 }
 
@@ -81,13 +83,16 @@ void interupt_init()
 {
 		/* Attach peripheral to Pin */
 		SYSCON_AttachSignal(SYSCON, kPINT_PinInt0, _PINT_PIN_INT0_SRC);
+		SYSCON_AttachSignal(SYSCON, kPINT_PinInt1, _PINT_PIN_INT1_SRC);
 		/* Initialize PINT Perph and Clock */
 		PINT_Init(PINT);
 		/* Configure PIN Interrupt with Callback */
 		PINT_PinInterruptConfig(PINT, kPINT_PinInt0, kPINT_PinIntEnableRiseEdge, pint_pin9_callback_RISE);
 		//PINT_PinInterruptConfig(PINT, kPINT_PinInt0, kPINT_PinIntEnableFallEdge, pint_pin9_callback_FALL);
+		PINT_PinInterruptConfig(PINT, kPINT_PinInt1, kPINT_PinIntEnableRiseEdge,pint_pin8_callback_RISE);
 		/*Enable interrupt callback */
 		PINT_EnableCallbackByIndex(PINT, kPINT_PinInt0);
+		PINT_EnableCallbackByIndex(PINT, kPINT_PinInt1);
 }
 
 int main(void) {
@@ -104,19 +109,18 @@ int main(void) {
     GPIO_PinInit(GPIO, 0, BLUE_LED, &OUTPUT_CONFIG);
     GPIO_PinInit(GPIO, 0, SWITCH, &INPUT_CONFIG);
 
+    //Initializing Interrupts
     interupt_init();
-
+    // Turning on Blue LED
     GPIO_PinWrite(GPIO, 0, BLUE_LED, ON);
 
     while(1)
     {
-
-    	if(toggle_led)
+    	// Interrupt sets the ftoggle_led flag to toggle the red and green LEDs
+    	if(ftoggle_led)
     	   	{
     	    	GPIO_PinWrite(GPIO, 0, RED_LED, ON);
-    	    	GPIO_PinWrite(GPIO, 0, GREEN_LED, OFF);
-    	    	toggle_led = FALSE;
-
+    	    	GPIO_PinWrite(GPIO, 0, GREEN_LED, OFF)
     	    }
     		else
     	    {
