@@ -2682,3 +2682,2097 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 21:33:31.090
 !MESSAGE RedlinkServer telnet session connected on port 3025->52611 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.kex.api.internal.HttpHelper 4 0 2021-03-26 21:43:14.282
+!MESSAGE Error connecting to {0} with error code {1}
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-26 21:43:14.357
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-26 21:43:14.372
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-26 21:43:14.387
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-26 21:43:14.402
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-26 21:43:14.516
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-26 21:43:14.532
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2021-03-26 22:29:25.158 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2021-03-26 22:29:28.177
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-26 22:29:28.177
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+L:
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(com.nxp.mcuxpresso.core.debug.linkserver.ui.CRTCApplicationLaunchShortcut,MCUXpresso IDE LinkServer (inc. CMSIS-DAP) probes,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@23d12a3a,
+		[Parameter(com.nxp.mcuxpresso.core.debug.support.shortcut.parameter,parameter,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(org.eclipse.text.quicksearch.commands.quicksearchCommand,Quick Search,
+		,
+		Category(org.eclipse.text.quicksearch.commands.category,Quick Search,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70df41f9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-26 22:29:28.177
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@64a7ad02,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@46590dd0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-26 22:29:34.716
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\battl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:11.270
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:11.302
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:11.327
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:11.352
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:39.978
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:33:40.083
+!MESSAGE Indexed 'lpcxpresso804_ctimer_match_example' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:44.149
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:33:44.213
+!MESSAGE Indexed 'lpcxpresso804_ctimer_match_interrupt_example' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:46.728
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:33:46.782
+!MESSAGE Indexed 'lpcxpresso804_ctimer_pwm_example' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:33:49.184
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:33:49.236
+!MESSAGE Indexed 'lpcxpresso804_ctimer_pwm_interrupt_example' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:37:47.335
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:37:47.455
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:37:47.548
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:37:48.159
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:37:48.716
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:42:02.615
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:42:02.701
+!MESSAGE Indexed 'lpcxpresso804_pint_pin_interrupt' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-26 22:42:05.568
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-26 22:42:05.658
+!MESSAGE Indexed 'lpcxpresso804_pint_pattern_match' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:44:05.059
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:44:05.075
+!MESSAGE RedlinkServer telnet session connected on port 3025->55091 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:44:08.312
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:44:08.833
+!MESSAGE RedlinkServer telnet session connected on port 3025->55093 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-26 22:44:13.876
+!MESSAGE Telnet session connected on port 3330->55099 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-26 22:44:59.307
+!MESSAGE Request for monitor: 'CountingRequestMonitor: Status ERROR: org.eclipse.cdt.dsf code=10004  null children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2021-03-26 22:44:59.307
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:44:59.549
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:44:59.549
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:44:59.549
+!MESSAGE Wire ACK Fault in DAP access
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:44:59.549
+!MESSAGE Debugging context: lpcxpresso804_ctimer_match_example LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-26 22:45:13.223
+!MESSAGE Request for monitor: 'CountingRequestMonitor: Status ERROR: org.eclipse.cdt.dsf code=10004  null children=[Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;]' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2021-03-26 22:45:13.223
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:13.467
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:13.467
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:13.467
+!MESSAGE Wire ACK Fault in DAP access
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:13.467
+!MESSAGE Debugging context: lpcxpresso804_ctimer_match_example LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-26 22:45:15.938
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@13219f0d): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2021-03-26 22:45:15.938
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:16.315
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:16.315
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:16.315
+!MESSAGE Wire ACK Fault in DAP access
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:16.315
+!MESSAGE Debugging context: lpcxpresso804_ctimer_match_example LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-26 22:45:25.665
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.debug.ui.actions.DsfSuspendCommand$4$1@51db48b8): Status ERROR: org.eclipse.cdt.dsf.gdb code=10004 Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1; java.lang.Exception: Stopping Thread 1 failed: T06thread:1;' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10004 2021-03-26 22:45:25.665
+!MESSAGE Failed to execute MI command:
+-exec-interrupt
+Error message from debugger back end:
+Stopping Thread 1 failed: T06thread:1;
+!STACK 0
+java.lang.Exception: Stopping Thread 1 failed: T06thread:1;
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.processMIOutput(AbstractMIControl.java:993)
+	at org.eclipse.cdt.dsf.mi.service.command.AbstractMIControl$RxThread.run(AbstractMIControl.java:822)
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:25.958
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:25.958
+!MESSAGE 19: Could not stop execution from running
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:25.958
+!MESSAGE Wire ACK Fault in DAP access
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 22:45:25.958
+!MESSAGE Debugging context: lpcxpresso804_ctimer_match_example LinkServer Debug
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-26 22:45:34.544
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@551fec31): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-26 22:45:34.544
+!MESSAGE Invalid context type.
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2021-03-26 22:45:47.471
+!MESSAGE 02: Failed on connect: Ee(42). Could not connect to core. (E)
+
+!ENTRY com.nxp.mcuxpresso.core.debug 4 0 2021-03-26 22:45:47.486
+!MESSAGE 31: No connection to chip's debug port (E)
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:46:11.522
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:46:12.044
+!MESSAGE RedlinkServer telnet session connected on port 3025->55152 @ 127.0.0.1
+
+!ENTRY com.crt.log 4 -1 2021-03-26 22:47:57.218
+!MESSAGE Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_GPIO_Interrupt_LED
+!STACK 0
+java.lang.Exception: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_GPIO_Interrupt_LED
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:512)
+	at com.crt.config.database.ChipVendor.save(ChipVendor.java:730)
+	at com.crt.config.database.TargetConfig.save(TargetConfig.java:1524)
+	at com.crt.config.SaveViewInfo.saving(SaveViewInfo.java:102)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:387)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:204)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1164)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:197)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:171)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:159)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:459)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_GPIO_Interrupt_LED
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:29)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:210)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:153)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:866)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:816)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:809)
+	at org.eclipse.cdt.core.model.CoreModel.setProjectDescription(CoreModel.java:1400)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:507)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_GPIO_Interrupt_LED
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:137)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:392)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:66)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2287)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:644)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:208)
+	... 21 more
+
+!ENTRY com.crt.log 4 -1 2021-03-26 22:47:59.130
+!MESSAGE Resource '/LPC804_GPIO_Interrupt_LED/LPC804_GPIO_Interrupt_LED LinkServer Debug.launch' does not exist.
+!STACK 0
+java.lang.Exception: org.eclipse.core.internal.resources.ResourceException: Resource '/LPC804_GPIO_Interrupt_LED/LPC804_GPIO_Interrupt_LED LinkServer Debug.launch' does not exist.
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.debug.support.linkserver.ui.AttachLabelDecorator.decorate(AttachLabelDecorator.java:51)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:247)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:386)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:362)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/LPC804_GPIO_Interrupt_LED/LPC804_GPIO_Interrupt_LED LinkServer Debug.launch' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:273)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:266)
+	at com.nxp.mcuxpresso.core.debug.support.linkserver.ui.AttachLabelDecorator.decorate(AttachLabelDecorator.java:48)
+	... 8 more
+Caused by: java.lang.Exception: Resource '/LPC804_GPIO_Interrupt_LED/LPC804_GPIO_Interrupt_LED LinkServer Debug.launch' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	... 13 more
+
+!ENTRY com.crt.log 4 -1 2021-03-26 22:48:02.695
+!MESSAGE Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Toggling_LEDs
+!STACK 0
+java.lang.Exception: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Toggling_LEDs
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:512)
+	at com.crt.config.database.ChipVendor.save(ChipVendor.java:730)
+	at com.crt.config.database.TargetConfig.save(TargetConfig.java:1524)
+	at com.crt.config.SaveViewInfo.saving(SaveViewInfo.java:102)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:387)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:204)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1164)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:197)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:171)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:159)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:459)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Toggling_LEDs
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:29)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:210)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:153)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:866)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:816)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:809)
+	at org.eclipse.cdt.core.model.CoreModel.setProjectDescription(CoreModel.java:1400)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:507)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Toggling_LEDs
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:137)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:392)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:66)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2287)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:644)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:208)
+	... 21 more
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:50:25.414
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:50:25.932
+!MESSAGE RedlinkServer telnet session connected on port 3025->55266 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:50:32.292
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:50:32.819
+!MESSAGE RedlinkServer telnet session connected on port 3025->55269 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-26 22:50:46.782
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-26 22:50:47.304
+!MESSAGE RedlinkServer telnet session connected on port 3025->55283 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-26 22:50:52.033
+!MESSAGE Telnet session connected on port 3331->55289 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-26 23:06:33.772
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 23:33:37.653
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 23:33:37.653
+!MESSAGE 16: Target error from status-poll
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 23:33:37.653
+!MESSAGE Hardware Transfer Error
+!SUBENTRY 1 com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 23:33:37.653
+!MESSAGE Debugging context: lpcxpresso804_pint_pattern_match LinkServer Debug
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 4 0 2021-03-26 23:40:59.226
+!MESSAGE Unable to parse ProbeList output to get probe ref count: []
+
+!ENTRY com.nxp.swtools.kex.api.internal.HttpHelper 4 0 2021-03-26 23:41:00.501
+!MESSAGE Error connecting to {0} with error code {1}
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-26 23:41:00.562
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-26 23:41:00.578
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-26 23:41:00.594
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-26 23:41:00.609
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-26 23:41:00.627
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-26 23:41:00.643
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-26 23:41:03.330
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2021-03-26 23:41:03.572
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.cdt.dsf.gdb.internal.ui.console.GdbBasicCliConsole$InputReadJob
+!SESSION 2021-03-27 19:09:20.598 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.core.resources 2 10035 2021-03-27 19:09:23.447
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2021-03-27 19:09:27.777
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-27 19:09:27.777
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+L:
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(com.nxp.mcuxpresso.core.debug.linkserver.ui.CRTCApplicationLaunchShortcut,MCUXpresso IDE LinkServer (inc. CMSIS-DAP) probes,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@776a7ec6,
+		[Parameter(com.nxp.mcuxpresso.core.debug.support.shortcut.parameter,parameter,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(org.eclipse.text.quicksearch.commands.quicksearchCommand,Quick Search,
+		,
+		Category(org.eclipse.text.quicksearch.commands.category,Quick Search,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2d23a5be,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-27 19:09:27.777
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@51aa2a58,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@726d8fa0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-27 19:09:36.092
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\battl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.crt.log 4 -1 2021-03-27 19:12:04.209
+!MESSAGE Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Interrupt_LED_Toggle
+!STACK 0
+java.lang.Exception: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Interrupt_LED_Toggle
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:512)
+	at com.crt.config.database.ChipVendor.save(ChipVendor.java:730)
+	at com.crt.config.database.TargetConfig.save(TargetConfig.java:1524)
+	at com.crt.config.SaveViewInfo.saving(SaveViewInfo.java:102)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:387)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:204)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:207)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1164)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1143)
+	at org.eclipse.core.internal.resources.Project.close(Project.java:197)
+	at org.eclipse.ui.actions.CloseResourceAction.invokeOperation(CloseResourceAction.java:171)
+	at org.eclipse.ui.actions.WorkspaceAction.execute(WorkspaceAction.java:159)
+	at org.eclipse.ui.actions.WorkspaceAction$1.runInWorkspace(WorkspaceAction.java:459)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Interrupt_LED_Toggle
+	at org.eclipse.cdt.internal.core.settings.model.ExceptionFactory.createCoreException(ExceptionFactory.java:29)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:210)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionStorageManager.setProjectDescription(CProjectDescriptionStorageManager.java:153)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:866)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:816)
+	at org.eclipse.cdt.internal.core.settings.model.CProjectDescriptionManager.setProjectDescription(CProjectDescriptionManager.java:809)
+	at org.eclipse.cdt.core.model.CoreModel.setProjectDescription(CoreModel.java:1400)
+	at com.nxp.mcuxpresso.core.datamodels.SDKChipVendorDatabase.save(SDKChipVendorDatabase.java:507)
+	... 15 more
+Caused by: java.lang.IllegalArgumentException: Attempted to beginRule: R/, does not match outer scope rule: P/LPC804_Interrupt_LED_Toggle
+	at org.eclipse.core.runtime.Assert.isLegal(Assert.java:66)
+	at org.eclipse.core.internal.jobs.ThreadJob.illegalPush(ThreadJob.java:137)
+	at org.eclipse.core.internal.jobs.ThreadJob.push(ThreadJob.java:392)
+	at org.eclipse.core.internal.jobs.ImplicitJobs.begin(ImplicitJobs.java:66)
+	at org.eclipse.core.internal.jobs.JobManager.beginRule(JobManager.java:298)
+	at org.eclipse.core.internal.resources.WorkManager.checkIn(WorkManager.java:124)
+	at org.eclipse.core.internal.resources.Workspace.prepareOperation(Workspace.java:2242)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2287)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.cdt.internal.core.model.CModelOperation.runOperation(CModelOperation.java:644)
+	at org.eclipse.cdt.internal.core.settings.model.AbstractCProjectDescriptionStorage.setProjectDescription(AbstractCProjectDescriptionStorage.java:208)
+	... 21 more
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:14:59.379
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:14:59.511
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:14:59.616
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:00.589
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:01.083
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:01.735
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:06.059
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 19:15:06.367
+!MESSAGE Indexed 'lpcxpresso804_ctimer_match_interrupt_example' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:10.509
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 19:15:10.575
+!MESSAGE Indexed 'lpcxpresso804_ctimer_pwm_example' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 19:15:13.031
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 19:15:13.082
+!MESSAGE Indexed 'lpcxpresso804_ctimer_pwm_interrupt_example' (0 sources, 0 headers) in 0.001 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 19:15:48.436
+!MESSAGE Indexed 'lpcxpresso804_ctimer_match_example' (19 sources, 47 headers) in 0.399 sec: 5,564 declarations; 10,043 references; 3 unresolved inclusions; 21 syntax errors; 28 unresolved names (0.18%)
+
+!ENTRY com.crt.log 1 0 2021-03-27 19:35:03.729
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-27 19:35:03.746
+!MESSAGE RedlinkServer telnet session connected on port 3025->64464 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-27 19:35:19.841
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-27 19:35:20.374
+!MESSAGE RedlinkServer telnet session connected on port 3025->64475 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-27 19:35:24.229
+!MESSAGE Telnet session connected on port 3330->64481 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.259
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.515
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.593
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.652
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.729
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.788
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.866
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:00.924
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:01.002
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:01.473
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:01.547
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:01.634
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.054
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.074
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.093
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.114
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.133
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.153
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.440
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.460
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.479
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.499
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.518
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:12.537
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 21:03:16.395
+!MESSAGE Indexed 'LPC804_Project' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:31.940
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.198
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.276
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.333
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.409
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.466
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.539
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.594
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:32.678
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:33.054
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:33.129
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:33.213
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.846
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.865
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.883
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.903
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.922
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY com.nxp.mcuxpresso.core.datamodels 4 0 2021-03-27 21:03:35.942
+!MESSAGE Unable to find driver for memory 'BOOT_FLASH' in board 'lpcxpresso804'
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-03-27 21:03:56.060
+!MESSAGE Indexed 'LPC804_ctimer_LED_Toggle' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY com.nxp.swtools.periphs.model.yaml.converters 4 0 2021-03-27 21:04:52.656
+!MESSAGE No MCU was loaded from YAML
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-27 21:05:52.048
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.nxp.swtools.kex.api.internal.HttpHelper 4 0 2021-03-27 21:21:56.844
+!MESSAGE Error connecting to {0} with error code {1}
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-27 21:21:56.903
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-27 21:21:56.919
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 2 2021-03-27 21:21:56.935
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.console".
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui.console 4 120 2021-03-27 21:21:56.950
+!MESSAGE Exception occurred during console property change notification.
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4720)
+	at org.eclipse.swt.SWT.error(SWT.java:4635)
+	at org.eclipse.swt.SWT.error(SWT.java:4606)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:452)
+	at org.eclipse.swt.widgets.Widget.getDisplay(Widget.java:574)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsolePage.propertyChange(BuildConsolePage.java:250)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.run(AbstractConsole.java:97)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.console.AbstractConsole$PropertyNotifier.notify(AbstractConsole.java:112)
+	at org.eclipse.ui.console.AbstractConsole.firePropertyChange(AbstractConsole.java:230)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleStreamDecorator.setColor(BuildConsoleStreamDecorator.java:46)
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.propertyChange(BuildConsoleManager.java:326)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore$2.run(ScopedPreferenceStore.java:325)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.firePropertyChangeEvent(ScopedPreferenceStore.java:322)
+	at org.eclipse.ui.preferences.ScopedPreferenceStore.lambda$0(ScopedPreferenceStore.java:171)
+	at org.eclipse.core.internal.preferences.EclipsePreferences$2.run(EclipsePreferences.java:851)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.firePreferenceEvent(EclipsePreferences.java:854)
+	at org.eclipse.core.internal.preferences.EclipsePreferences.remove(EclipsePreferences.java:961)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1458)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.resetOverriddenPreferences(PartRenderingEngine.java:1452)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$StylingPreferencesHandler.lambda$0(PartRenderingEngine.java:1441)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4167)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3634)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-27 21:21:56.968
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.ui 4 0 2021-03-27 21:21:56.983
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.internal.ui.buildconsole.BuildConsoleManager.lambda$1(BuildConsoleManager.java:376)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.swt.widgets.Display.release(Display.java:3644)
+	at org.eclipse.swt.graphics.Device.dispose(Device.java:277)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:51)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+!SESSION 2021-03-28 01:08:24.763 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2021-03-28 01:08:27.792
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-28 01:08:27.792
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+L:
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(com.nxp.mcuxpresso.core.debug.linkserver.ui.CRTCApplicationLaunchShortcut,MCUXpresso IDE LinkServer (inc. CMSIS-DAP) probes,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@6fe9c048,
+		[Parameter(com.nxp.mcuxpresso.core.debug.support.shortcut.parameter,parameter,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(org.eclipse.text.quicksearch.commands.quicksearchCommand,Quick Search,
+		,
+		Category(org.eclipse.text.quicksearch.commands.category,Quick Search,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54d46c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-28 01:08:27.792
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1ddba7a0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5c34b0f2,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-28 01:08:35.058
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\battl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui 4 4 2021-03-28 01:08:41.082
+!MESSAGE An internal error has occurred.
+!STACK 0
+java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Objects.java:203)
+	at com.nxp.swtools.dashboard.Activator.lambda$2(Activator.java:130)
+	at com.nxp.swtools.common.ui.utils.progress.UIJobHelper$UIJobWithRunable.runInUIThread(UIJobHelper.java:119)
+	at org.eclipse.ui.progress.UIJob.lambda$0(UIJob.java:95)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3963)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3590)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.block(ModalContext.java:166)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:368)
+	at org.eclipse.jface.dialogs.ProgressMonitorDialog.run(ProgressMonitorDialog.java:469)
+	at org.eclipse.ui.internal.progress.ProgressMonitorJobsDialog.run(ProgressMonitorJobsDialog.java:237)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.disconnectFromWorkspace(IDEWorkbenchAdvisor.java:515)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.access$2(IDEWorkbenchAdvisor.java:492)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor$2.run(IDEWorkbenchAdvisor.java:333)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.postShutdown(IDEWorkbenchAdvisor.java:354)
+	at org.eclipse.ui.internal.Workbench.shutdown(Workbench.java:3004)
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1160)
+	at org.eclipse.ui.internal.Workbench.lambda$4(Workbench.java:1428)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1428)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1404)
+	at org.eclipse.ui.internal.WorkbenchWindow.busyClose(WorkbenchWindow.java:1788)
+	at org.eclipse.ui.internal.WorkbenchWindow.lambda$3(WorkbenchWindow.java:1817)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:72)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1817)
+	at org.eclipse.ui.internal.WorkbenchWindow.close(WorkbenchWindow.java:1826)
+	at org.eclipse.ui.internal.WorkbenchWindow$3.close(WorkbenchWindow.java:529)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.lambda$4(WBWRenderer.java:577)
+	at org.eclipse.swt.events.ShellListener$2.shellClosed(ShellListener.java:102)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:102)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4175)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1057)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1081)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Decorations.closeWidget(Decorations.java:284)
+	at org.eclipse.swt.widgets.Decorations.WM_CLOSE(Decorations.java:1573)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4761)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4860)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DefWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Shell.callWindowProc(Shell.java:508)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4860)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:348)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1501)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:2138)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4819)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3585)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1160)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1049)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:660)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:559)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:154)
+	at com.nxp.mcuxpresso.ide.application.MCUXApplication.start(MCUXApplication.java:42)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:137)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:107)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:657)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:594)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY com.nxp.swtools.kex.api.internal.HttpHelper 4 0 2021-03-28 01:08:41.910
+!MESSAGE Error connecting to {0} with error code {1}
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2021-03-28 01:08:42.702
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: Error while reading from repository: https://mcuxpresso.nxp.com/eclipse/sdk/2.4.1/artifacts.xml.xz.
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.updateCache(CacheManager.java:430)
+	at org.eclipse.equinox.internal.p2.repository.CacheManager.createCacheFromFile(CacheManager.java:136)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.getLocalFile(XZedSimpleArtifactRepositoryFactory.java:65)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:89)
+	at org.eclipse.equinox.internal.p2.artifact.repository.simple.XZedSimpleArtifactRepositoryFactory.load(XZedSimpleArtifactRepositoryFactory.java:42)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:131)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.loadRepository(ArtifactRepositoryManager.java:125)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.load(CompositeArtifactRepository.java:496)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.addChild(CompositeArtifactRepository.java:177)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepository.<init>(CompositeArtifactRepository.java:99)
+	at org.eclipse.equinox.internal.p2.artifact.repository.CompositeArtifactRepositoryFactory.load(CompositeArtifactRepositoryFactory.java:120)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.factoryLoad(ArtifactRepositoryManager.java:92)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:775)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.loadRepository(AbstractRepositoryManager.java:676)
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.basicRefreshRepository(AbstractRepositoryManager.java:204)
+	at org.eclipse.equinox.internal.p2.artifact.repository.ArtifactRepositoryManager.refreshRepository(ArtifactRepositoryManager.java:136)
+	at com.nxp.mcuxpresso.core.datamodels.ui.jobs.RefreshSDKRepoJob.run(RefreshSDKRepoJob.java:159)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.transport.ecf 4 1002 2021-03-28 01:08:42.702
+!MESSAGE Error while reading from repository: https://mcuxpresso.nxp.com/eclipse/sdk/2.4.1/artifacts.xml.xz.
+
+!ENTRY org.eclipse.core.jobs 4 2 2021-03-28 01:08:42.722
+!MESSAGE An internal error occurred during: "Refresh SDK Repository...".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.core.internal.runtime.InternalPlatform.getLog(InternalPlatform.java:361)
+	at org.eclipse.core.runtime.Plugin.getLog(Plugin.java:237)
+	at com.crt.utils.general.Reporter.log(Reporter.java:564)
+	at com.crt.utils.general.Reporter.log(Reporter.java:576)
+	at com.crt.utils.general.Reporter.log(Reporter.java:580)
+	at com.nxp.mcuxpresso.core.datamodels.ui.jobs.RefreshSDKRepoJob.run(RefreshSDKRepoJob.java:256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2021-03-28 02:03:49.238 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.8.0_201
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.jface 2 0 2021-03-28 02:03:52.330
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-28 02:03:52.330
+!MESSAGE A conflict occurred for ALT+CTRL+SHIFT+L:
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(com.nxp.mcuxpresso.core.debug.linkserver.ui.CRTCApplicationLaunchShortcut,MCUXpresso IDE LinkServer (inc. CMSIS-DAP) probes,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@467cd4b9,
+		[Parameter(com.nxp.mcuxpresso.core.debug.support.shortcut.parameter,parameter,null,true)],,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+CTRL+SHIFT+L,
+	ParameterizedCommand(Command(org.eclipse.text.quicksearch.commands.quicksearchCommand,Quick Search,
+		,
+		Category(org.eclipse.text.quicksearch.commands.category,Quick Search,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@69a3bf40,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2021-03-28 02:03:52.330
+!MESSAGE A conflict occurred for CTRL+U:
+Binding(CTRL+U,
+	ParameterizedCommand(Command(com.nxp.swtools.clocks.commands.unlockAll,Unlock All Settings,
+		,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2c731a16,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+U,
+	ParameterizedCommand(Command(org.eclipse.jdt.debug.ui.commands.Execute,Execute,
+		Evaluate selected text,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2a341e3d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-03-28 02:04:00.025
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\battl'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:12:43.946
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:18:36.586
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:18:36.605
+!MESSAGE RedlinkServer telnet session connected on port 3025->55156 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:18:59.122
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:18:59.644
+!MESSAGE RedlinkServer telnet session connected on port 3025->55165 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:19:56.735
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:19:57.264
+!MESSAGE RedlinkServer telnet session connected on port 3025->55190 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:20:08.231
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:20:08.759
+!MESSAGE RedlinkServer telnet session connected on port 3025->55196 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 02:20:13.733
+!MESSAGE Telnet session connected on port 3330->55202 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-28 02:20:28.274
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@7a3b4935): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-28 02:20:28.274
+!MESSAGE Invalid context type.
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-28 02:20:29.404
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@433038e1): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-28 02:20:29.404
+!MESSAGE Invalid context type.
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:21:12.590
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:21:13.115
+!MESSAGE RedlinkServer telnet session connected on port 3025->55228 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:21:46.647
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:21:47.166
+!MESSAGE RedlinkServer telnet session connected on port 3025->55245 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 02:21:50.808
+!MESSAGE Telnet session connected on port 3330->55250 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:22:46.927
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:22:56.221
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:22:56.752
+!MESSAGE RedlinkServer telnet session connected on port 3025->55279 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:25:54.527
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:25:55.056
+!MESSAGE RedlinkServer telnet session connected on port 3025->55355 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:26:14.360
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:26:14.893
+!MESSAGE RedlinkServer telnet session connected on port 3025->55364 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:26:40.489
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:26:41.021
+!MESSAGE RedlinkServer telnet session connected on port 3025->55379 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:31:25.886
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:31:25.932
+!MESSAGE RedlinkServer telnet session connected on port 3025->55501 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:31:49.619
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:31:50.148
+!MESSAGE RedlinkServer telnet session connected on port 3025->55514 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 02:31:53.753
+!MESSAGE Telnet session connected on port 3330->55520 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:33:33.651
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:33:34.182
+!MESSAGE RedlinkServer telnet session connected on port 3025->55570 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:39:11.582
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:39:12.108
+!MESSAGE RedlinkServer telnet session connected on port 3025->55716 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:40:19.117
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:40:19.640
+!MESSAGE RedlinkServer telnet session connected on port 3025->55745 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:40:32.688
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:40:33.220
+!MESSAGE RedlinkServer telnet session connected on port 3025->55751 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:41:00.311
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:41:00.846
+!MESSAGE RedlinkServer telnet session connected on port 3025->55767 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:41:11.800
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:41:12.327
+!MESSAGE RedlinkServer telnet session connected on port 3025->55772 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:41:25.581
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:41:26.110
+!MESSAGE RedlinkServer telnet session connected on port 3025->55779 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:44:06.072
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:44:06.603
+!MESSAGE RedlinkServer telnet session connected on port 3025->55851 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:44:30.991
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:44:42.860
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:44:43.381
+!MESSAGE RedlinkServer telnet session connected on port 3025->55869 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:56.899
+!MESSAGE Could not find any matching component for type wkt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:56.919
+!MESSAGE Could not find any matching component for type lpc_minispi
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:56.939
+!MESSAGE Could not find any matching component for type lpc_i2c
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:56.958
+!MESSAGE Could not find any matching component for type dac
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:56.983
+!MESSAGE Could not find any matching component for type wwdt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.002
+!MESSAGE Could not find any matching component for type lpc_crc
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.024
+!MESSAGE Could not find any matching component for type pint
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.044
+!MESSAGE Could not find any matching component for type capt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.063
+!MESSAGE Could not find any matching component for type mrt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.086
+!MESSAGE Could not find any matching component for type plu
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.110
+!MESSAGE Could not find any matching component for type lpc_acomp
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:45:57.142
+!MESSAGE Could not find any matching component for type lpc_adc
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.675
+!MESSAGE Could not find any matching component for type wkt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.695
+!MESSAGE Could not find any matching component for type lpc_minispi
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.714
+!MESSAGE Could not find any matching component for type lpc_i2c
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.733
+!MESSAGE Could not find any matching component for type dac
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.758
+!MESSAGE Could not find any matching component for type wwdt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.778
+!MESSAGE Could not find any matching component for type lpc_crc
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.801
+!MESSAGE Could not find any matching component for type pint
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.821
+!MESSAGE Could not find any matching component for type capt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.841
+!MESSAGE Could not find any matching component for type mrt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.864
+!MESSAGE Could not find any matching component for type plu
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.887
+!MESSAGE Could not find any matching component for type lpc_acomp
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:46:05.918
+!MESSAGE Could not find any matching component for type lpc_adc
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.025
+!MESSAGE Could not find any matching component for type wkt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.046
+!MESSAGE Could not find any matching component for type lpc_minispi
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.065
+!MESSAGE Could not find any matching component for type lpc_i2c
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.087
+!MESSAGE Could not find any matching component for type dac
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.112
+!MESSAGE Could not find any matching component for type wwdt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.131
+!MESSAGE Could not find any matching component for type lpc_crc
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.153
+!MESSAGE Could not find any matching component for type pint
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.174
+!MESSAGE Could not find any matching component for type capt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.194
+!MESSAGE Could not find any matching component for type mrt
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.217
+!MESSAGE Could not find any matching component for type plu
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.242
+!MESSAGE Could not find any matching component for type lpc_acomp
+
+!ENTRY com.nxp.swtools.periphs.gui.view 4 0 2021-03-28 02:47:16.273
+!MESSAGE Could not find any matching component for type lpc_adc
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:47:39.198
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:48:24.232
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:48:30.410
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:48:30.938
+!MESSAGE RedlinkServer telnet session connected on port 3025->55963 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:49:26.272
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:49:30.262
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:49:30.790
+!MESSAGE RedlinkServer telnet session connected on port 3025->55989 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:49:42.752
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:49:43.272
+!MESSAGE RedlinkServer telnet session connected on port 3025->55999 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:50:06.126
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:50:10.311
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:50:10.841
+!MESSAGE RedlinkServer telnet session connected on port 3025->56010 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:52:36.143
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:53:49.787
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:53:50.306
+!MESSAGE RedlinkServer telnet session connected on port 3025->56105 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 02:55:08.300
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 02:56:46.984
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 02:56:47.514
+!MESSAGE RedlinkServer telnet session connected on port 3025->56179 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:00:56.148
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:00:56.679
+!MESSAGE RedlinkServer telnet session connected on port 3025->56309 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:26:25.717
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:26:26.240
+!MESSAGE RedlinkServer telnet session connected on port 3025->57027 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:29:34.419
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:29:34.939
+!MESSAGE RedlinkServer telnet session connected on port 3025->57112 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 03:29:41.500
+!MESSAGE Telnet session connected on port 3330->57122 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:33:39.486
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:33:40.012
+!MESSAGE RedlinkServer telnet session connected on port 3025->57224 @ 127.0.0.1
+
+!ENTRY com.nxp.swtools.tee.controller 4 0 2021-03-28 03:34:14.443
+!MESSAGE Unexpected event object: null
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:34:39.609
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:34:40.130
+!MESSAGE RedlinkServer telnet session connected on port 3025->57252 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:35:30.960
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:35:31.494
+!MESSAGE RedlinkServer telnet session connected on port 3025->57272 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 03:35:35.079
+!MESSAGE Telnet session connected on port 3330->57279 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-28 03:36:15.771
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@66ba66d7): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Given context: (gdb[4].proc[42000].threadGroup[i1],gdb[4].proc[42000].OSthread[1]).thread[1], is already suspended. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-28 03:36:15.771
+!MESSAGE Given context: (gdb[4].proc[42000].threadGroup[i1],gdb[4].proc[42000].OSthread[1]).thread[1], is already suspended.
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:36:59.204
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:36:59.727
+!MESSAGE RedlinkServer telnet session connected on port 3025->57320 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:38:56.849
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:38:57.389
+!MESSAGE RedlinkServer telnet session connected on port 3025->57373 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:39:13.186
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:39:13.713
+!MESSAGE RedlinkServer telnet session connected on port 3025->57380 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 03:39:15.641
+!MESSAGE Telnet session connected on port 3330->57385 @ 127.0.0.1
+
+!ENTRY org.eclipse.cdt.dsf 4 10005 2021-03-28 03:40:18.801
+!MESSAGE Request for monitor: 'RequestMonitor (org.eclipse.cdt.dsf.concurrent.ImmediateRequestMonitor@13fed246): Status ERROR: org.eclipse.cdt.dsf.gdb code=10003 Invalid context type. null' resulted in an error.
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 10003 2021-03-28 03:40:18.801
+!MESSAGE Invalid context type.
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:40:23.341
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:40:23.862
+!MESSAGE RedlinkServer telnet session connected on port 3025->57414 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:40:52.213
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:40:52.740
+!MESSAGE RedlinkServer telnet session connected on port 3025->57431 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 03:40:57.968
+!MESSAGE Telnet session connected on port 3330->57437 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:43:38.332
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:43:38.865
+!MESSAGE RedlinkServer telnet session connected on port 3025->57507 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:43:56.260
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:43:56.792
+!MESSAGE RedlinkServer telnet session connected on port 3025->57518 @ 127.0.0.1
+
+!ENTRY com.nxp.mcuxpresso.core.debug 1 0 2021-03-28 03:44:00.324
+!MESSAGE Telnet session connected on port 3330->57523 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:46:30.588
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:46:31.120
+!MESSAGE RedlinkServer telnet session connected on port 3025->57595 @ 127.0.0.1
+
+!ENTRY com.crt.log 1 0 2021-03-28 03:50:16.592
+!MESSAGE Trying to connect to redlink server on port 3025.
+
+!ENTRY com.nxp.mcuxpresso.core.debug.support.linkserver 1 0 2021-03-28 03:50:17.115
+!MESSAGE RedlinkServer telnet session connected on port 3025->57711 @ 127.0.0.1
+
+!ENTRY org.eclipse.core.resources 4 2 2021-03-28 03:56:41.542
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.NullPointerException
+	at com.nxp.swtools.eclipse.McuxEclipseEarlyStartup.detectDeletedMexFile(McuxEclipseEarlyStartup.java:299)
+	at com.nxp.swtools.eclipse.McuxEclipseEarlyStartup.detectDeletedMexFile(McuxEclipseEarlyStartup.java:305)
+	at com.nxp.swtools.eclipse.McuxEclipseEarlyStartup.resourceChanged(McuxEclipseEarlyStartup.java:242)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:380)
+	at org.eclipse.core.internal.resources.Workspace.checkpoint(Workspace.java:575)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation$1.run(PerformChangeOperation.java:265)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.executeChange(PerformChangeOperation.java:298)
+	at org.eclipse.ltk.internal.ui.refactoring.UIPerformChangeOperation.executeChange(UIPerformChangeOperation.java:99)
+	at org.eclipse.ltk.core.refactoring.PerformChangeOperation.run(PerformChangeOperation.java:219)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2292)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2317)
+	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:89)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
