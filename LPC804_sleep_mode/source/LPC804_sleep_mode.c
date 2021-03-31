@@ -29,7 +29,7 @@
  */
  
 /**
- * @file    LPC804_Interrupt_LED_Toggle.c
+ * @file    LPC804_sleep_mode.c
  * @brief   Application entry point.
  */
 #include <stdio.h>
@@ -39,62 +39,79 @@
 #include "clock_config.h"
 #include "LPC804.h"
 #include "fsl_debug_console.h"
-#include "fsl_gpio.h"
+
+/* TODO: insert other include files here. */
 #include "fsl_pint.h"
 #include "fsl_syscon.h"
-/* TODO: insert other include files here. */
+#include "fsl_power.h"
 
 /* TODO: insert other definitions and declarations here. */
-
-#define RED_LED				13U
-#define SW2					12U
-#define OUTPUT				1U
-#define INPUT				0U
-#define ON					0U
-#define OFF					1U
+#define RED_LED 		13U
+#define ON				0U
+#define OFF				1U
+#define PINT0			kPINT_PinInt0
+#define PORT0			0U
 #define _PINT_PIN_INT0_SRC kSYSCON_GpioPort0Pin12ToPintsel
-
-gpio_pin_config_t OUTPUT_CONFIG = { OUTPUT , OFF};
-gpio_pin_config_t INPUT_CONFIG = { INPUT , OFF};
-
 /*
- * @brief   Application entry point.
+ * @brief   This application is to practice putting a Micro to sleep mode \
+ * and using an interrupt to wake up the micro from sleep
  */
-/* Interrupt Callback Function */
-void pint_intr_callback(pint_pin_int_t pintr, uint32_t pmatch_status)
+
+gpio_pin_config_t output_config = { 1U,1U};
+
+/* Callback function for Pin 12 Interrupt to wake up micro */
+void pint0_callback(pint_pin_int_t pintr, uint32_t pmatch_status)
 {
-    GPIO_PinWrite(GPIO, 0U, RED_LED, ON);
+	// Turn on RED_LED
+	GPIO_PinWrite(GPIO,PORT0,RED_LED,ON);
+	// Clear Interrupt Flag
     PINT_PinInterruptClrStatus(PINT, pintr);
 }
 
-void interrupt_init()
+/* Function to initialize RED_LED */
+void INIT_RedLed()
 {
-	/* Attach peripheral to Pin */
-	SYSCON_AttachSignal(SYSCON, kPINT_PinInt0, _PINT_PIN_INT0_SRC);
-
-	/* Initialize PINT Perph and Clock */
-	PINT_Init(PINT);
-
-	/* Configure PIN Interrupt with Callback */
-    PINT_PinInterruptConfig(PINT, kPINT_PinInt0, kPINT_PinIntEnableBothEdges, pint_intr_callback);
-
-    /*Enable interrupt callback */
-    PINT_EnableCallbackByIndex(PINT, kPINT_PinInt0);
+	CLOCK_EnableClock(kCLOCK_Gpio0);
+	GPIO_PinInit(GPIO, PORT0, RED_LED, &output_config);
 }
+
+/* Function to initialize SW2 interrupt to waker up Micro */
+void INIT_SW2Interrupt()
+{
+	// Attach PINT0 to Pin12
+	SYSCON_AttachSignal(SYSCON, PINT0, _PINT_PIN_INT0_SRC);
+	// Enable PIN Interrupt
+	PINT_Init(PINT);
+	// Configurate PIN12 Interrupt for Rising edge
+	PINT_PinInterruptConfig(PINT, PINT0, kPINT_PinIntEnableRiseEdge, pint0_callback);
+	// Enable callback function
+	PINT_EnableCallbackByIndex(PINT, PINT0);
+}
+
 int main(void) {
+
 
   	/* Init board hardware. */
     BOARD_InitBootPins();
     BOARD_InitBootClocks();
     BOARD_InitBootPeripherals();
+#ifndef BOARD_INIT_DEBUG_CONSOLE_PERIPHERAL
+    /* Init FSL debug console. */
+    BOARD_InitDebugConsole();
+#endif
+    // Initialize RED_LED & SW2 Interrupt
+    INIT_RedLed();
+    INIT_SW2Interrupt();
 
-    /* PIN INITIALIZATION */
-    GPIO_PinInit(GPIO, 0U, RED_LED, &OUTPUT_CONFIG);
-    interrupt_init();
+    // ENTER SLEEP MODE
+    POWER_EnterSleep();
 
     while(1)
-    {
-    	GPIO_PinWrite(GPIO, 0U, RED_LED, OFF);
-    }
+	{
+
+	GPIO_PinWrite(GPIO,0U,RED_LED,1U);
+	printf("Micro Awake \n");
+
+	}
     return 0 ;
 }
