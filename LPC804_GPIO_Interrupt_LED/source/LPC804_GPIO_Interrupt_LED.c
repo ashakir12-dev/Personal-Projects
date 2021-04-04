@@ -75,7 +75,7 @@ void pint_pin9_callback_RISE (pint_pin_int_t pintr, uint32_t pmatch_status)
 // Callback function for GPIO8 intterupt
 void pint_pin8_callback_RISE(pint_pin_int_t pintr, uint32_t pmatch_status)
 {
-	ftoggle_led = FALSE;
+	toggle_led = FALSE;
 	PINT_PinInterruptClrStatus(PINT, pintr);
 }
 
@@ -117,10 +117,10 @@ int main(void) {
     while(1)
     {
     	// Interrupt sets the ftoggle_led flag to toggle the red and green LEDs
-    	if(ftoggle_led)
+    	if(toggle_led)
     	   	{
     	    	GPIO_PinWrite(GPIO, 0, RED_LED, ON);
-    	    	GPIO_PinWrite(GPIO, 0, GREEN_LED, OFF)
+    	    	GPIO_PinWrite(GPIO, 0, GREEN_LED, OFF);
     	    }
     		else
     	    {
